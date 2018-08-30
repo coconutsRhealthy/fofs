@@ -1,10 +1,66 @@
 <html>
     <head>
         <title>FOFS</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
     </head>
 
     <body>
-        FOFS venster
+        <div ng-app = "mainApp" ng-controller = "fofsController">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div ng-repeat="i in [1, 2, 3, 4, 5, 6, 7]">
+                        <div class="row">
+                            <div ng-repeat="z in [1, 2, 3, 4, 5, 6]">
+                                <div class="no-padding-left-right col-sm-2">
+                                    <img class="{{getOpacityGroup1(i, z)}}" src="https://scontent-amt2-1.cdninstagram.com/vp/50efc8ae51799e919a9212b629bb6ff4/5C1B33A8/t51.2885-15/sh0.08/e35/c135.0.810.810/s640x640/38011615_1948134701911353_3665779472176513024_n.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div ng-repeat="i in [1, 2, 3, 4, 5, 6, 7]">
+                        <div class="row">
+                            <div ng-repeat="z in [1, 2, 3, 4, 5, 6]">
+                                <div class="no-padding-left-right col-sm-2">
+                                    <img class="{{getOpacityGroup2(i, z)}}" src="https://scontent-amt2-1.cdninstagram.com/vp/50efc8ae51799e919a9212b629bb6ff4/5C1B33A8/t51.2885-15/sh0.08/e35/c135.0.810.810/s640x640/38011615_1948134701911353_3665779472176513024_n.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div ng-repeat="i in [1, 2, 3, 4, 5, 6, 7]">
+                        <div class="row">
+                            <div ng-repeat="z in [1, 2, 3, 4, 5, 6]">
+                                <div class="no-padding-left-right col-sm-2">
+                                    <img class="{{getOpacityGroup3(i, z)}}" src="https://scontent-amt2-1.cdninstagram.com/vp/50efc8ae51799e919a9212b629bb6ff4/5C1B33A8/t51.2885-15/sh0.08/e35/c135.0.810.810/s640x640/38011615_1948134701911353_3665779472176513024_n.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div ng-repeat="i in [1, 2, 3, 4, 5, 6, 7]">
+                        <div class="row">
+                            <div ng-repeat="z in [1, 2, 3, 4, 5, 6]">
+                                <div class="no-padding-left-right col-sm-2">
+                                    <img class="{{getOpacityGroup4(i, z)}}" src="https://scontent-amt2-1.cdninstagram.com/vp/50efc8ae51799e919a9212b629bb6ff4/5C1B33A8/t51.2885-15/sh0.08/e35/c135.0.810.810/s640x640/38011615_1948134701911353_3665779472176513024_n.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

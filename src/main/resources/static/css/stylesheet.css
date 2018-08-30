@@ -1,0 +1,17 @@
+.no-padding-left-right {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.fullwidth-height-auto {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+.opacity-fullwidth-height-auto {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
